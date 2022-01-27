@@ -1,3 +1,17 @@
 <h4>Tareas Pendientes:</h4>
-<app-tasks-item *ngFor="let tareaArealizar of tareas">
-</app-tasks-item>
+<app-add-task 
+    (onAddTask)="addTask($event)"
+>
+</app-add-task>
+<div class="card">
+    <div class="card-body">
+   <app-tasks-item 
+   class="card"
+        *ngFor="let task of tasks" 
+        [task]="task"
+        (onDeleteTask)="deleteTask(task)"
+        (onToogleReminder)="toogleReminder(task)"
+        >
+    </app-tasks-item>
+</div>
+</div>
