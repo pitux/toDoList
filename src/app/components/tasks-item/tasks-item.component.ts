@@ -16,8 +16,8 @@ export class TasksItemComponent implements OnInit {
  // @Input() task: Task=TASKS[0]; /* Con el decorador @Input podemos leer el array de tareas*/
  
   @Input() task: Task=TASKS[0];
-  @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter
-  @Output() onToogleReminder: EventEmitter<Task> = new EventEmitter
+  @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter()
+  @Output() onToogleReminder: EventEmitter<Task> = new EventEmitter()
 
   faTimes=faTimes;
   faCalendar=faCalendar

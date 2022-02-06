@@ -32,7 +32,7 @@ export class TaskService {
 
   deleteTask(task: Task): Observable <Task> {
     const url=`${this.apiUrl}/${task.id}`
-    return this.http.get<Task>(url)
+    return this.http.delete<Task>(url)
   }
 
   updateTaskReminder(task:Task): Observable <Task> {

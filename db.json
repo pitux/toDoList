@@ -1,34 +1,10 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Terminar primer modulo de Angular",
-      "day": "25 de Enero 10:00",
-      "reminder": false
-    },
-    {
-      "id": 2,
-      "text": "Buscar Info AngularJS y Bootstrap",
-      "day": "25 de Enero 18:00",
-      "reminder": false
-    },
-    {
-      "id": 3,
-      "text": "Comenzar a leer BD",
-      "day": "28 de Enero 10:00",
-      "reminder": false
-    },
-    {
-      "text": "Leer DB",
-      "day": "2022-01-27",
-      "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "Nueva Tarea",
-      "day": "2022-02-05",
-      "reminder": false,
-      "id": 5
+      "text": "Armar joda",
+      "day": "2022-02-10",
+      "reminder": true,
+      "id": 1
     }
   ]
 }

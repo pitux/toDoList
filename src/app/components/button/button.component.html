@@ -1,2 +1,15 @@
-<button class="btn" [ngStyle]="{'background-color':color}" (click)="OnClick()">{{text}}</button>
+<!--
+<button 
+    class="btn add_task" 
+    [ngStyle]="{'background-color':color}" 
+    (click)="OnClick()"
+    >
+    {{text}}
+</button>-->
+
+<span 
+    class="material-icons" style="cursor: pointer;"
+    (click)="OnClick()">
+    post_add
+</span> 
 <!--El color del botón lo recibimos del controlador del boton, que a la vez se define cuando se monta el componente  -->

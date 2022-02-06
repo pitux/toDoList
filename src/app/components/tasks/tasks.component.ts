@@ -35,10 +35,15 @@ export class TasksComponent implements OnInit {
   }
 
   deleteTask(task:Task){
+ //   console.log("DeleteTask");
     this.taskService.deleteTask(task)
-    .subscribe(()=>[
-      this.tasks = this.tasks.filter ( t => t.id !== task.id ) //Devolvemos la que no coincida con la que marcamos
-    ])
+    .subscribe( 
+        () => (
+      this.tasks = this.tasks.filter ( (t) => (
+  //      console.log("Tarea Borrada", task)
+        t.id !== task.id 
+      )) //Devolvemos la que no coincida con la que marcamos
+    ))
   }
   toogleReminder(task:Task){
     task.reminder = !task.reminder;

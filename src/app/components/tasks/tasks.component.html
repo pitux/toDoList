@@ -1,17 +1,16 @@
-<h4>Tareas Pendientes:</h4>
-<app-add-task 
-    (onAddTask)="addTask($event)"
->
-</app-add-task>
-<div class="card">
-    <div class="card-body">
-   <app-tasks-item 
-   class="card"
-        *ngFor="let task of tasks" 
-        [task]="task"
-        (onDeleteTask)="deleteTask(task)"
-        (onToogleReminder)="toogleReminder(task)"
-        >
+
+<h5 *ngIf="tasks.length !== 0">Tareas Pendientes:</h5>
+
+<app-add-task (onAddTask)="addTask($event)"> </app-add-task>
+<div>
+  <div class="card-body">
+    <!--Lista de Tareas-->
+    <app-tasks-item
+      *ngFor="let task of tasks"
+      [task]="task"
+      (onDeleteTask)="deleteTask(task)"
+      (onToogleReminder)="toogleReminder(task)"
+    >
     </app-tasks-item>
-</div>
+  </div>
 </div>
